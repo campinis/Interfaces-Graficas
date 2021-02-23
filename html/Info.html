@@ -1,0 +1,237 @@
+<!DOCTYPE html><!--Estandar usado HTML5-->
+<html>
+
+ <!-------------------------head------------------------->   
+
+<head>
+    <link href="../css/menulateral.css" rel="stylesheet">
+    <link href="../css/estiloInfo.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
+
+    <meta charset="UTF-8"> <!--Especificacion el uso HTML5, caracteres, etc-->
+    <meta name="COCO" content="Portafolio de COCO"> <!--Metadatos especificados-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portafolio de COCCO</title>
+</head>
+
+<!-------------------------body------------------------->  
+
+<body>
+
+    <!--Inicio del menu-->
+    <div id="sidemenu" class="menu-collapsed">
+
+        <!--Header-->
+
+        <div id="header">
+            <div id="menu-btn">
+                <div class="btn-hamburger"></div><!---->
+                <div class="btn-hamburger"></div>
+                <div class="btn-hamburger"></div>
+            </div>
+        </div>
+
+        <!--Profile-->
+
+        <div id="profile">
+            <div id="photo"><img src="../img/P1010039.jpg" alt=""></div>
+
+            <div id="name"><span>Cocco Chanel</span></div>
+        </div>
+
+        <!--Items-->
+
+        <div id="menu-items">
+            <div class="item">
+                <a href="../LandingPage.html">
+                    <div class="icon"><img src="../img/086-home.png" alt=""></div>
+                    <div class="title"><span>Pagina Principal</span></div>
+                </a>
+            </div>
+
+            <div class="item separator"></div>
+
+            <div class="item">
+                <a href="#">
+                    <div class="icon"><img src="../img/053-file.png" alt=""></div>
+                    <div class="title"><span>Información</span></div>
+                </a>
+            </div>
+
+            <div class="item separator"></div>
+
+            <div class="item">
+                <a href="#">
+                    <div class="icon"><img src="../img/092-message.png" alt=""></div>
+                    <div class="title"><span>Contactar</span></div>
+                </a>
+            </div>
+
+            <div class="item separator"></div>
+            <div class="item separator"></div>
+
+
+            <div class="item">
+                <a href="#QuienSoy">
+                    <div class="icon"><img src="../img/038-id card.png" alt=""></div>
+                    <div class="title"><span>Quien soy</span></div>
+                </a>
+            </div>
+
+            <div class="item separator"></div>
+
+            <div class="item">
+                <a href="#Educacion">
+                    <div class="icon"><img src="../img/031-book.png" alt=""></div>
+                    <div class="title"><span>Educacion</span></div>
+                </a>
+            </div>
+
+            <div class="item separator"></div>
+
+            <div class="item">
+                <a href="#">
+                    <div class="icon"><img src="../img/025-favorites.png" alt=""></div>
+                    <div class="title"><span>Conocimiento</span></div>
+                </a>
+            </div>
+
+            <div class="item separator"></div>
+
+            <div class="item">
+                <a href="#">
+                    <div class="icon"><img src="../img/012-edit.png" alt=""></div>
+                    <div class="title"><span>Experiencia</span></div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+    
+        const btn = document.querySelector('#menu-btn');
+        const menu = document.querySelector('#sidemenu');
+        btn.addEventListener('click', e =>{ 
+            menu.classList.toggle("menu-expanded");
+            menu.classList.toggle("menu-collapsed");  
+
+            document.querySelector('body').classList.toggle('body-expanded');
+        });
+    </script>
+    <!--Final del menu-->
+
+    <!--Inicio Content-->
+    <header class="parallax-completo">
+    </header>
+
+    <!--Quien soy-->
+    <div class="wrapper" id="QuienSoy">
+        <header class="header">
+            <h1>Quien soy yo</h1>
+        </header>
+        <article class="mainw">
+            <p>¡Hola Bienvenido a mi portafolio!<br>
+                Yo soy Cocco Chanel, tengo 4 años, soy una golden retriever y vivo en Cartago,<br>
+                peso aproximadamente 32 kg, mi color de pelo es dorado oscuro, es poco inusual en mi raza,<br>
+                yo originalmente naci en Palmares de Costa Rica, soy de una camada de 6 perritos muy sanos,<br>
+                todos mis hermanos al igual que yo estamos al rededor de todo el pais, y mis padres siguen vivos y viviendo en Palmares,<br>
+                como 2 veces al dia, sin embargo, mis padres me dan mas a lo largo del dia.<br>
+                A lo largo del dia mi rutina siempre es la misma, me levanto a las 7 am para pasear con Antonio,<br>
+                llego a la casa luego de 1 hora para comer y tomar agua, luego de eso tomo una siesta<br>
+                hasta que mis papas van a comer y me dan un poquito mas de comida, luego espero mi comida a las 5pm,<br>
+                para luego seguir esperando que mis padres vuelvan a comer para que me den un poco mas de comida y domir<br>
+
+            </p>
+        </article>
+        <aside class="aside aside1">
+            <h1>Familiares:</h1>
+            <p>Beatriz<br>Esteban<br>Antonio<br>David</p>
+        </aside>
+        <aside class="aside aside2">
+            <h1>Comidas Favoritas:</h1>
+            <p>Huevo<br>Pollo<br>Zanahoria<br>Helado de perro</p>
+        </aside>
+        <header class="headerr">
+        </header>
+    </div>
+    <div class="wrapper" id="QuienSoy">
+        <header class="headerr">
+        </header>
+        <aside class="aside aside1">
+            <h1>Pasatiempos:</h1>
+            <p>Jugar atrapar pato<br>Jugar a tirar de la cuerda<br>
+                Jugar a atraparme<br>Caminar por las mañanas
+                Nadar en el mar<br>Comer todo el dia</p>
+        </aside>
+        <aside class="aside aside2">
+            <h1>Mi descripción:</h1>
+            <p>¡Hola Bienvenido en este espacio voy a describirme!<br>
+                Yo soy una mascota muy amable, bondadosa, humilde<br>
+                comelona, insistente, persistente, cariñosa, pero sobre todo cariñosa,<br>
+        </aside>
+    </div>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <!--Estudios-->
+    <div class="wrapper" id="Educacion">
+        <header class="header">
+            <h1>Mi Educacion</h1>
+        </header>
+        <article class="main">
+            <ul class="lista-cuadrados">
+                <li>Principios para comer:</li>
+                <br></br>
+                <li>Pirncipios para caminar en la calle:</li>
+                <br></br>
+                <li>Principios para dejarme bañar:</li>
+                <br></br>
+                <li>Jugar a atraparme</li>
+            </ul>
+        </article>
+        <aside class="aside aside1w">
+            <div class="imageperfil"><img src="../img/P1010039.jpg" alt=""></div>
+        </aside>
+    </div>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <div class="wrapper" id="Educacion">
+        <header class="header">
+            <h1>Mi Educacion</h1>
+        </header>
+        <article class="main">
+            <ul class="lista-cuadrados">
+                <li>Principios para comer:</li>
+                <br></br>
+                <li>Pirncipios para caminar en la calle:</li>
+                <br></br>
+                <li>Principios para dejarme bañar:</li>
+                <br></br>
+                <li>Jugar a atraparme</li>
+            </ul>
+        </article>
+        <aside class="aside aside1w">
+            <div class="imageperfil"><img src="../img/WhatsApp Image 2021-02-17 at 9.01.14 PM.jpeg" alt=""></div>
+        </aside>
+    </div>
+    
+
+  
+    <!--Final Content-->
+
+    <!--Inicio Footer-->
+    <footer>
+        <div class="footer">
+            <p>copyright &copy;2020 Cocco. designed by <span>Esteban Campos</span></p>
+        </div>
+    </footer>
+    <!--Final Content-->
+</body>
+
+</html>
