@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contáctame</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="../css/menulateral.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="../css/Footer.css" rel="stylesheet">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<!--Inicio del menu-->
+<div id="sidemenu" class="menu-collapsed">
+
+    <!--Header-->
+
+    <div id="header">
+        <div id="menu-btn">
+            <div class="btn-hamburger"></div><!---->
+            <div class="btn-hamburger"></div>
+            <div class="btn-hamburger"></div>
+        </div>
+    </div>
+
+    <!--Profile-->
+
+    <div id="profile">
+        <div id="photo"><img src="../img/P1010039.jpg" alt=""></div>
+
+        <div id="name"><span>Cocco Chanel</span></div>
+    </div>
+
+    <!--Items-->
+
+    <div id="menu-items">
+        <div class="item">
+            <a href="../LandingPage.html">
+                <div class="icon"><img src="../img/086-home.png" alt=""></div>
+                <div class="title"><span>Pagina Principal</span></div>
+            </a>
+        </div>
+
+        <div class="item separator"></div>
+
+        <div class="item">
+            <a href="Info.html">
+                <div class="icon"><img src="../img/053-file.png" alt=""></div>
+                <div class="title"><span>Información</span></div>
+            </a>
+        </div>
+
+        <div class="item separator"></div>
+
+        <div class="item">
+            <a href="#">
+                <div class="icon"><img src="../img/092-message.png" alt=""></div>
+                <div class="title"><span>Contactar</span></div>
+            </a>
+        </div>
+
+        <div class="item separator"></div>
+    </div>
+
+</div>
+
+<script>
+
+    const btn = document.querySelector('#menu-btn');
+    const menu = document.querySelector('#sidemenu');
+    btn.addEventListener('click', e =>{ 
+        menu.classList.toggle("menu-expanded");
+        menu.classList.toggle("menu-collapsed");  
+
+        document.querySelector('body').classList.toggle('body-expanded');
+    });
+</script>
+<!--Final del menu-->
+<!--Inicio de content-->
+
+<div class="container">
+	<div class="row">
+        <form action="enviar.php" method="post">
+            <h1>Contáctame</h1>
+            <div class="form-group">
+                <div class="input-group ml-2 mb-2">
+                    <div>
+                        Asunto
+                    </div>
+                    <input type="text" class="form-control" id="asunto" name="asunto" placeholder="Escribe el asunto" required>
+                </div>
+                <div class="input-group ml-2 mb-2">
+                    <div>
+                        Correo
+                    </div>
+                    <input type="email" class="form-control" id="correo" name="correo" placeholder="nombre@email.com" required>
+                </div>
+                <div class="input-group ml-2 mb-2">
+                    <div>
+                        Descripción
+                    </div>
+                    <textarea class="form-control" id="message" name="message"placeholder="Escribe la descripción..." required></textarea>
+                </div>
+            </div>
+            <div>
+                <input type="submit" value="Enviar" class="btn btn-success btn-block rounded-0 py-2">
+            </div>
+        </form>
+	</div>
+    <!--Final del content-->
+    
+</div>

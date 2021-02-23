@@ -6,7 +6,7 @@
 body{
     width: 100%;
     font-family: futura, Bold, sans-serif;
-    background: #fff;
+    background: linear-gradient(90deg, rgba(186, 52, 15) 0%, rgba(226, 63, 18) 35%, rgba(240, 104, 66) 100%);
 }
 
 .parallax-completo{
@@ -42,6 +42,16 @@ body{
     overflow: hidden;
     margin: auto;
     text-align: center;
+    color: white;
+    
+}
+
+.center .h2{
+    font-family: 'Bungee Shade', cursive;
+}
+
+.center .h2:hover{
+    font-family: 'Bungee Shade', cursive;
 }
 
 .espacio{
